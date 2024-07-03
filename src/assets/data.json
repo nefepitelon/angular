@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "John Doe",
+    "numero": "12345",
+    "documento": "ABC123",
+    "ciudad": "New York"
+  },
+  {
+    "nombre": "Jane Smith",
+    "numero": "67890",
+    "documento": "DEF456",
+    "ciudad": "Los Angeles"
+  },
+  {
+    "nombre": "John Doe",
+    "numero": "12345",
+    "documento": "ABC123",
+    "ciudad": "New York"
+  },
+  {
+    "nombre": "Jane Smith",
+    "numero": "67890",
+    "documento": "DEF456",
+    "ciudad": "Los Angeles"
+  }
+]

@@ -1,0 +1,40 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element">
+        <input [(ngModel)]="element.name" (ngModelChange)="updateData(element)">
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="number">
+      <th mat-header-cell *matHeaderCellDef> Number </th>
+      <td mat-cell *matCellDef="let element">
+        <input [(ngModel)]="element.number" (ngModelChange)="updateData(element)">
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="document">
+      <th mat-header-cell *matHeaderCellDef> Document </th>
+      <td mat-cell *matCellDef="let element">
+        <input [(ngModel)]="element.document" (ngModelChange)="updateData(element)">
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef> City </th>
+      <td mat-cell *matCellDef="let element">
+        <input [(ngModel)]="element.city" (ngModelChange)="updateData(element)">
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-button (click)="updateData(element)">Save</button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
